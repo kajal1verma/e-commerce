@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-danger:#f63440;
+    --bg-white:#fff;
+    --bg-lightwhite:#f5f5f5;
+
+    --primary-font: "Poppins", sans-serif;
+    --text-white:#fff;
+    --text-black:#121212;
+    --text-danger:#f63440;
+    --text-gray:#aaa;
+    --text-darkgrey:#777;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    background: var(--bg-white);
+    color: var(--text-black);
+    overflow-x: hidden;
+}
+ a,a:hover{
+    text-decoration: none;
+ }
+ .btn-danger{
+color: var(--bg-danger);
+border-color: var(--bg-danger);
+padding: 0.8rem 1.5rem;
+font-size: 1rem;
+font-weight: 500;
+}
+.btn-danger:hover{
+color: var(--bg-danger);
+    
+    background: transparent;
+ }
+
+ #header .fixed-top{
+    /* box-shadow: 0 0.12rem 0.675rem red; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ #header .navbar-nav .nav-item .nav-link:hover,#header .navbar-nav .nav-item .nav-link.active{
+    color: var(--text-danger);
+    /* font-size: 4rem; */
+ }
+ #header{
+   font-size: 1.3rem;
+ }
+ #home{
+    /* margin-top: 3.5rem; */
+    background: url(./images/slides.jpg);
+    background-size: cover;
+    /* background-size: contain */
+    /* background-position: 100%; */
+    /* background-repeat: no-repeat; */
+   }
+   .btn{
+      background-color:var(--bg-white);
+      color: black;
+      padding: 10px 20px;
+      border: 1px solid black;
+   }
+   .btn:hover{
+      background-color: var(--text-gray);
+      color: var(--text-danger);
+   }
+   #home .text-center{
+  
+  
+   margin-top:15rem ;
+}
+#home .container{
+  
+   /* color:#121212; */
+   /* justify-content: center; */
+}
+ #home .text-center h2{
+    
+   color:var(--text-white)
+ }
+ #home .text-center h1{
+   color: var(--text-danger);
+
+ }
+ .text-center h4{
+   flex-wrap: wrap;
+   color: var(--text-white);
+ }
+ .carousel-item{
+   font-family: var(--primary-font);
+   font-size: 60px;
+ }
+ .carousel-item .btn{
+   border: white!important;
+ 
+}
+.title h2::before{
+   position: absolute;
+   content: "";
+   width: 4px;
+   height: 50px;
+   background-color: var(--bg-danger);
+   left: -20px;
+   top:50%;
+   transform: translateY(-50%);
+}
+ @media (max-width:600px) {
+  #home .text-center{
+   
+      /* width: 90%; */
+      
+      /* background-color: aqua; */
+      margin-bottom: 6rem;
+     
+      border: 1px solid white;
+      /* max-width: 15rem; */
+   }
+   #home{
+     
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: cover;
+   }
+
+   .center-blog{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   justify-content: center;
+   }
+   .flex{
+      flex-direction: column;
+    
+   }
+   
+ }
+ #collection .btn{
+   color:black;
+   border-color: black;
+ }
+#collection .btn:hover{
+   background-color: var(--bg-danger);
+ color: var(--text-white);
+
+ 
+}
+.active-filter-btn{
+   background-color: var(--bg-danger);
+   color: var(--text-white);
+}
+.collection{
+   display: flex;
+   /* justify-content: center; */
+   flex-direction: column;
+   align-items: center;
+}
+.collection-img{
+   transition:transform .2s;
+   position: relative;
+   max-width: 300px;
+   border: 1px solid var(--text-gray);
+}
+.collection-img:hover{
+   /* box-shadow: rgba(179, 10, 10, 0.35) 0px 5px 15px; */
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transform: scale(1.01);    
+}
+
+.text-primary{
+   color: var(--bg-danger)!important;
+}
+ .span{
+   position:absolute;
+   top:20px;
+   right: 20px;
+   height: 46px;
+   width: 46px;
+   border: 1px solid var(--text-gray);
+   border-radius: 50%;
+   color: white;
+   background-color: var(--bg-danger);
+
+}
+
+.special-img{
+   /* max-width:300px; */
+   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+transition: transform .1s;
+   border: 1px solid gray;
+   position: relative;
+}
+.special-img:hover{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transform: scale(1.01);    
+}
+.special-img span{
+   position: absolute;
+   top:20px;
+   right: 20px;
+   color: var(--bg-danger);
+}
+.center{
+display: flex;   
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+#special .btn{
+   color:black;
+   border-color: black;
+ }
+#special .btn:hover{
+   background-color: var(--bg-danger);
+ color: var(--text-white);
+
+ 
+}
+#offer{
+   background: url(./images/slide1.jpg) center ;
+   background-size: cover;
+
+}
+
+#offer .row{
+   min-height: 60vh;
+}
+.offer-content span{
+font-size: 20px;
+color: var(--text-danger);
+}
+.offer-content h2{
+color: var(--text-danger);
+font-size: 60px;
+}
+#offer .btn{
+   color:black;
+   border-color: black;
+ }
+#offer .btn:hover{
+   background-color: var(--bg-danger);
+ color: var(--text-white);
+}
+.text-title{
+   color: black !important;;
+}
+.card-body{
+   text-align: justify;
+}
+.card .img{
+   max-width: 22rem;
+   max-height: 20rem;
+}
+.about{
+   text-align: justify;
+   /* border: 1px solid black; */
+   /* width: 100%; */
+}
+#newslatter{
+   background-color: rgba(179,179,179,0.05);
+}
+#newslatter p{
+   max-width: 600px;
+}
+#newslatter .input-group{
+   max-width: 500px;
+}
+.form-control{
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+#newslatter .btn{
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+background-color: var(--bg-danger);
+color:var(--text-white);
+border-color: var(--text-danger);
+}
+#newslatter .btn:hover{
+   background-color: var(--text-darkgrey);
+   border-color: var(--text-darkgrey);
+}
+footer{
+   padding: 20px;
+   color:black;
+   background-color: var(--text-gray);
+}
+.flex{
+   display: flex;
+   justify-content: space-between;
+
+
+}
+.ul-hover{
+   color: white;
+}
+.ul-hover:hover{
+color: var(--text-danger);
+} 
+footer .btn:hover{
+background-color: var(--bg-danger);
+color: white;
+}
